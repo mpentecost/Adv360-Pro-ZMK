@@ -34,13 +34,13 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
-zed_em_kay: zed_em_kay {
-    label = "ZM_zed_em_kay";
+macro_vscode_format: macro_vscode_format {
+    label = "macro_vscode_format";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings
         = <&macro_press &kp LSHFT &kp LALT &kp F>
-        , <&macro_tap &kp Z &kp M &kp K>
+        , <&macro_pause_for_release>
         , <&macro_release &kp LSHFT &kp LALT &kp F>
         ;
 };
