@@ -34,9 +34,13 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
-macro_vscode_format: macro_vscode_format{
-compatible = "zmk,behavior-macro";
-label = "macro_vscode_format";
-#binding-cells = <0>;
-bindings = ;
+macro_vscode_format: macro_vscode_format {
+    label = "macro_vscode_format";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_tap &kp Z &kp M &kp K>
+        , <&macro_release &kp LSHFT>
+        ;
 };
